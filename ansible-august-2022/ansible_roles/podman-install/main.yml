@@ -1,0 +1,15 @@
+# this is an example of adding podman to a server
+# only thing you really need is podman latest
+######### dependencies ###########
+# a login to the rhel registry (provided)
+#
+#
+##################################
+# for fun - we should go ahead and pull down ubi 8 for playing around with
+
+
+- name: Install the latest version of podmnan
+  ansible.builtin.dnf:
+    name: podman
+    state: latest
+    

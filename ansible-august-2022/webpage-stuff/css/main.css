@@ -1,0 +1,29 @@
+body {
+    font-family: "Red Hat Text";
+    background-image: url(/img/bg_dots.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    font-weight: 500;
+    font-size: xx-large;
+    height: 100px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.hat {
+    width: 250px;
+    height: 150px;
+    float: left;
+    margin-left: 15px;
+}
+
+.ansible {
+    width: auto;
+    height: 100px;
+    float: right;
+    margin-top: 22px;
+    margin-right: 15px;
+}

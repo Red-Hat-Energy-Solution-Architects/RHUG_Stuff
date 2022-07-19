@@ -1,0 +1,18 @@
+# this is an example of building a web server
+# only thing you really need is to make sure ports are open
+# and httpd is installed so this will be short
+######### dependencies ###########
+#
+# python <= 2.6
+# python-dnf
+#
+#
+##################################
+# for fun - do we want to change the port from 80 to 8080?
+
+
+- name: Install the latest version of Apache
+  ansible.builtin.dnf:
+    name: httpd
+    state: latest
+    

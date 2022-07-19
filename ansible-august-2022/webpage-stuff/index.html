@@ -9,21 +9,25 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/red-hat-font.css"
 
 </head>
 
 <body>
 
   <script src="https://unpkg.com/mithril/mithril.js"></script>
+  <script src="./mithril.js"></script>
     <script>
     var root = document.body
-    m.render(root, m("div",
-                   m("button", "this is a textbox"),
-                   m("button", "stuff"),
-                   m("select", "things"),
-                   m("textbox", {style: {border: "solid 1px black"}}, "this is text!")
+    m.render(root, m("div.main",
+                   m("div.title", "Ansible + Red Hat = Great Things!",
+                     m("hr")),
+                   m("div.body"),
+                   m("div.footer",
+                     m("img.hat[src=img/Red-Hat-logo.png]"),
+                     m("img.ansible[src=img/icon_community.svg]"))
     ))
     </script>
 
