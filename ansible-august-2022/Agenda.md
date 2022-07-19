@@ -17,7 +17,7 @@
 - game it out
 
 
-
+## ### NOTES ###
 frank's notes
 
 dave's notes
@@ -28,3 +28,11 @@ tanner's notes
 
 andrew's thoughts
 - create new user and do somet other things (assign permissions, add to wheel, etc)
+- change root password
+
+## Links
+
+Ansible 2.0 Deck - 
+RHPDS links for students - 
+
+

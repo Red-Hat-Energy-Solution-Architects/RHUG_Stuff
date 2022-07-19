@@ -1,6 +1,7 @@
 body {
+    margin: 0;
     font-family: "Red Hat Text";
-    background-image: url(/img/bg_dots.png);
+    background-image: url(img/bg_dots.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -13,17 +14,34 @@ body {
     margin-top: 100px;
 }
 
+.icon {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
 .hat {
     width: 250px;
     height: 150px;
-    float: left;
-    margin-left: 15px;
+    padding-bottom: 15px;
+}
+
+.plus {
+    height: 85px;
+    padding-bottom: 50px;
+    filter: saturate(85%);
 }
 
 .ansible {
-    width: auto;
-    height: 100px;
-    float: right;
-    margin-top: 22px;
-    margin-right: 15px;
+    border: none;
+    background: inherit;
+    margin: 0 50%;
+}
+
+.ansImage {
+    height: 125px;
+}
+
+.ansImage:hover {
+    cursor: pointer;
 }

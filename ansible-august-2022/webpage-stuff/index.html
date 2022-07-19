@@ -26,8 +26,18 @@
                      m("hr")),
                    m("div.body"),
                    m("div.footer",
-                     m("img.hat[src=img/Red-Hat-logo.png]"),
-                     m("img.ansible[src=img/icon_community.svg]"))
+                     m("div.icon",
+                       m("img.hat[src=img/Red-Hat-logo.png]")
+                      ),
+                     m("div.icon",
+                       m("img.plus[src=img/redPlus.png]")
+                      ),
+                     m("div.icon",
+                       m("button.ansible",
+                         m("img.ansImage[src=img/ansible-logo.png]")
+                        )
+                      )
+                    )
     ))
     </script>
 
