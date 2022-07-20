@@ -1,0 +1,14 @@
+# here we are settting a password for the user
+# 
+#
+######### dependencies ###########
+#
+#
+#
+##################################
+
+
+- name: set the user's password
+  ansible.builtin.user:
+    name: coolguy
+    password: 'redhat!'

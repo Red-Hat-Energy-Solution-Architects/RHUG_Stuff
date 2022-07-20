@@ -1,0 +1,18 @@
+# here we are creating a users ssh keys
+# 
+#
+######### dependencies ###########
+# .ssh folder exists
+#
+#
+##################################
+
+
+- name: create user's ssh keys
+  ansible.builtin.user:
+    name: coolguy
+    generate_ssh_key: yes
+    ssh_key_bits: 2048
+    ssh_key_file: .ssh/id_rsa
+
+    

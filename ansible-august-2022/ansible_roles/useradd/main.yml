@@ -1,0 +1,21 @@
+# here we are adding a user to the server
+# this automatically creates a home directory.  
+# other information needs to be added still from
+# 'useradd' command (uid, folders, groups, etc.)
+#  default shell is /bin/bash when creating users
+######### dependencies ###########
+#
+#
+#
+##################################
+
+
+- name: add a user to the server
+  ansible.builtin.user:
+    name: coolguy
+    comment: coolguy
+    group: wheel
+    append: yes
+
+
+    

@@ -12,6 +12,3 @@
   ansible.builtin.dnf:
     name: podman
     state: latest
-
-- name: login to rhel-registry
-    

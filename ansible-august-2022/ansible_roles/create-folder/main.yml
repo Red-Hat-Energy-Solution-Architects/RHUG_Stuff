@@ -1,0 +1,18 @@
+# here we are creating a folder and
+# setting permissions and owner 
+#
+######### dependencies ###########
+# user has to exist
+#
+#
+##################################
+
+
+- name: create a new folder
+  ansible.builtin.file:
+    path: /home/coolguy/folder-thing
+    state: directory
+    owner: coolguy
+    group: coolguy
+    mode: '0755'
+    
