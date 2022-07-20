@@ -22,5 +22,5 @@ mkdir /home/coolguy/.ssh && chmod 600 /home/coolguy/.ssh
 
 #now lets generate some keys for him
 user coolguy
-penssl genrsa -aes256 -out coolguy 4096 && openssl rsa -in coolguy -out coolguy -pubout
+openssl genrsa -aes256 -out coolguy 4096 && openssl rsa -in coolguy -out coolguy -pubout
 
